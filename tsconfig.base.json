@@ -1,0 +1,42 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"strict": true,
+		"target": "ES2022",
+		"module": "ES2022",
+		"lib": ["ES2022", "dom"],
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"rootDir": ".",
+		"baseUrl": ".",
+		"paths": {
+			"@nx-expo-next-tamagui/pages/benefits": [
+				"packages/pages/benefits/src/index.ts"
+			],
+			"@nx-expo-next-tamagui/pages/provider": [
+				"packages/pages/provider/src/index.tsx"
+			],
+			"@nx-expo-next-tamagui/pages/resources": [
+				"packages/pages/resources/src/index.ts"
+			],
+			"@nx-expo-next-tamagui/pages/welcome": [
+				"packages/pages/welcome/src/index.ts"
+			],
+			"@nx-expo-next-tamagui/components": ["packages/components/src/index.ts"],
+			"@nx-expo-next-tamagui/expo": ["apps/expo/src/index.ts"]
+		},
+		"plugins": [
+			{
+				"name": "@nderscore/tamagui-typescript-plugin",
+				"pathToApp": "apps/next"
+			}
+		]
+	},
+	"exclude": ["node_modules", "tmp"]
+}
