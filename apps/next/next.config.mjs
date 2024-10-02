@@ -39,7 +39,7 @@ const nextConfig = {
 		forceSwcTransforms: true,
 		swcTraceProfiling: true,
 		scrollRestoration: true,
-	},
+	}
 }
 
 const plugins = [
