@@ -47,6 +47,7 @@ const plugins = [
 	withTamagui({
 		config: './tamagui.config.ts',
 		platform: 'web',
+		appDir: true,
 		themeBuilder: {
 			input: '../../packages/components/src/themes/theme.ts',
 			output: '../../packages/components/src/themes/theme-generated.ts',

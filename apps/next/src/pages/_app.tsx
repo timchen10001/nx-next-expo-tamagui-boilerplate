@@ -8,7 +8,7 @@ import {
 } from '@tamagui/next-theme'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import type { ReactElement, ReactNode } from 'react'
+import { Fragment, type ReactElement, type ReactNode } from 'react'
 import type { SolitoAppProps } from 'solito'
 
 export default function App({ Component, pageProps }: SolitoAppProps) {
@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: SolitoAppProps) {
 	const [_theme, setTheme] = useRootTheme()
 
 	return (
-		<>
+		<Fragment>
 			<Head>
 				<title>Cross Platform App</title>
 				<meta name='description' content='Cross platform app' />
@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: SolitoAppProps) {
 			>
 				<Provider>{getLayout(<Component {...pageProps} />)}</Provider>
 			</NextThemeProvider>
-		</>
+		</Fragment>
 	)
 }
 

@@ -6,19 +6,15 @@ import { Provider } from '@nx-expo-next-tamagui/pages/provider'
 import { WelcomeScreen } from '@nx-expo-next-tamagui/pages/welcome'
 
 const NavBar = () => (
-	<XStack tag='nav' padding='$4' bt='1px solid $borderColor'>
+	<XStack tag='nav' padding='$4'>
 		<Button
-			as={Link}
-			to={'/welcome'}
-			ghost
+			href="/welcome"
 			size='2'
 			marginHorizontal='1'
 			paddingVertical='0'
 		/>
 		<Button
-			as={Link}
-			to={'/benefits'}
-			ghost
+			href="/benefits"
 			size='2'
 			marginHorizontal='1'
 			paddingVertical='0'

@@ -1,7 +1,7 @@
 import {
 	type ITamaguiComponentsConfig,
 	tamaguiComponentsConfig,
-} from '@nx-expo-next-tamagui/components'
+} from '../../packages/components/src/tamagui.config'
 
 /// Customized Tamagui. This replace the import of `tamagui` package for our customization.
 declare module 'tamagui' {
